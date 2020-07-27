@@ -1,0 +1,23 @@
+<div align="center" style="color: whitesmoke;">
+    <app-add-movie [moviesList] = "moviesList"></app-add-movie>
+       <table class="table" align="center" border="solid line black 1px">
+        <thead style="font-weight: bold; color:white">
+            <th>Name</th>
+            <th>Category</th>
+            <th>Producer</th>
+            <th>Director</th>
+            <th>Release Date</th>
+            <th>Language</th>
+        </thead>
+        <tbody style="color: whitesmoke;">
+            <tr *ngFor="let movie of moviesList;">
+                <td>{{movie.name}}</td>
+                <td>{{movie.category}}</td>
+                <td>{{movie.producer}}</td>
+                <td>{{movie.director}}</td>
+                <td>{{movie.releaseDt}}</td>
+                <td>{{movie.language}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

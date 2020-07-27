@@ -1,0 +1,36 @@
+<h2 align="center"> Add new movie</h2>
+    <div class="row" style="color: whitesmoke;">
+        <div class="col"><label for="">Movie name:</label>
+            <input type="text" #txtMovieName style="font-weight: bold;" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col"><label for="">Category:</label>
+            <input type="text" #txtCategory style="font-weight: bold;" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col"><label for="">Producer:</label>
+            <input type="text" #txtProducer style="font-weight: bold;" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col"><label for="">Director:</label>
+            <input type="text" #txtDirector style="font-weight: bold;" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col"><label for="">Release Date:</label>
+            <input type="text" #txtReleaseDate style="font-weight: bold;" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col"><label for="">Language:</label>
+            <input type="text" #txtLanguage style="font-weight: bold;" /></div>
+    </div>
+
+    <div class="row">
+        <input type="button" value="Add" (click)="addMovie(txtMovieName, txtCategory, txtProducer, 
+            txtDirector, txtReleaseDate, txtLanguage)" />
+    </div>
+   
